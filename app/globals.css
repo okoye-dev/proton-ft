@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+/* Hide the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+.sidebar-content::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+/* Hide the scrollbar for Firefox */
+.sidebar-content {
+  scrollbar-width: none; 
+}
+
+/* Hide scrollbar for Internet Explorer, Edge */
+.sidebar-content {
+  -ms-overflow-style: none;
+}
